@@ -47,28 +47,28 @@ The system has 2 commands: 'index' and 'search'.
          >   otherwise from above will return "wrong usage" message
 
 2. search - search for provided query from inverted index.
-- Description : The command will start to search using single query provided.
-- Synopsis : search [ single_query ]
-- Option
-  1. search [-l index_file] --> load inverted index into search system
+  - Description : The command will start to search using single query provided.
+  - Synopsis : search [ single_query ]
+  - Option
+    1. search [-l index_file] --> load inverted index into search system
 
-  2. search [ single_query ]--> search using single query
-     Result: The command will show a list of DocIDs which meets the equivalence of single query.
-     Result Format:
-     >         ---------------------------------------- Search Results -----------------------------------------
-     >         Query : [ single_query ]
-     >         Doc list : [ list of (DocID, DocName) which satisfy the query parameter ]
-     >         ---------------------------------------------------------------------------------------------------------
-     Result Example:
-     >         >> search Ant
-     >         ---------------------------------------- Search Results -----------------------------------------
-     >         Query : Ant
-     >         Doc list : (1, "Ant & Dog"), (3, "Industrious Animal")
-     >         --------------------------------------------------------------------------------------------------------- 
-     Example:
-     >       search -l text.index
-     >       This will load the inverted index stored in text.index to search system.
-     > 
-     >       search ﻿A
-     >       This will search "A" in the current inverted index used in search system. 
-     >       otherwise from above will return "wrong usage" message
+    2. search [ single_query ]--> search using single query
+       Result: The command will show a list of DocIDs which meets the equivalence of single query.
+       Result Format:
+       >         ---------------------------------------- Search Results -----------------------------------------
+       >         Query : [ single_query ]
+       >         Doc list : [ list of (DocID, DocName) which satisfy the query parameter ]
+       >         ---------------------------------------------------------------------------------------------------------
+       Result Example:
+       >         >> search Ant
+       >         ---------------------------------------- Search Results -----------------------------------------
+       >         Query : Ant
+       >         Doc list : (1, "Ant & Dog"), (3, "Industrious Animal")
+       >         --------------------------------------------------------------------------------------------------------- 
+       Example:
+       >       search -l text.index
+       >       This will load the inverted index stored in text.index to search system.
+       > 
+       >       search ﻿A
+       >       This will search "A" in the current inverted index used in search system. 
+       >       otherwise from above will return "wrong usage" message
