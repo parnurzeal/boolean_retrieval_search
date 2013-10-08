@@ -26,6 +26,7 @@ The system has 2 commands: 'index' and 'search'.
          >                          .            |                                         .
          >                          .            |                                         . 
         Result Example:
+
          >     >> index -s 
          >   ---------------------------------------- Inverted Index -------------------------------------------
          >                    Term         |                         (DocID, DocName)                        
@@ -37,9 +38,12 @@ The system has 2 commands: 'index' and 'search'.
       2. index [ -r path index_file_name]  --> create inverted index from all text files in provided path and return index file named as index_file_name parameter.
           Result: return true when success, false otherwise.
           Result Format:
+         
          >      Successful created   ; if successful
          >      Failed created         ; if unsuccessful
+
           Example:
+
          >   index -r text_folder text.index
          >     This give the text.index file which contains a created inverted index.
          >   index -s
@@ -53,6 +57,7 @@ The system has 2 commands: 'index' and 'search'.
       1. search [-l index_file] --> load inverted index into search system
 
       2. search [ single_query ]--> search using single query
+
          Result: The command will show a list of DocIDs which meets the equivalence of single query.
          Result Format:
          >         ---------------------------------------- Search Results -----------------------------------------
