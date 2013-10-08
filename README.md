@@ -25,7 +25,7 @@ The system has 2 commands: 'index' and 'search'.
          >                    Term2        |              (DocID, DocName), (DocID, DocName),...
          >                          .            |                                         .
          >                          .            |                                         . 
-         >   Result Example:
+        Result Example:
          >     >> index -s 
          >   ---------------------------------------- Inverted Index -------------------------------------------
          >                    Term         |                         (DocID, DocName)                        
@@ -34,17 +34,17 @@ The system has 2 commands: 'index' and 'search'.
          >                         Cat           |                                         -
          >   ---------------------------------------------------------------------------------------------------------
          
-            1.2) index [ -r path index_file_name]  --> create inverted index from all text files in provided path and return index file named as index_file_name parameter.
-            Result: return true when success, false otherwise.
-            Result Format:
-               Successful created   ; if successful
-               Failed created         ; if unsuccessful
-      - Example:
-        index -r text_folder text.index
-          This give the text.index file which contains a created inverted index.
-        index -s
-          This will show the last created inverted index by option -r
-        otherwise from above will return "wrong usage" message
+      2. index [ -r path index_file_name]  --> create inverted index from all text files in provided path and return index file named as index_file_name parameter.
+          Result: return true when success, false otherwise.
+          Result Format:
+         >      Successful created   ; if successful
+         >      Failed created         ; if unsuccessful
+          Example:
+         >   index -r text_folder text.index
+         >     This give the text.index file which contains a created inverted index.
+         >   index -s
+         >     This will show the last created inverted index by option -r
+         >   otherwise from above will return "wrong usage" message
 
 2. search - search for provided query from inverted index.
 
