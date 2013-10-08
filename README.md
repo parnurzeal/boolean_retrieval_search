@@ -3,13 +3,11 @@ boolean_retrieval_search
 
 This is a search and index system of boolearn retrieval model for text files.
 
-How to run the system
-----------------------
+#### How to run the system
   * Requirement - Python 3.0, project folder from repository
   * Process - go to the project folder and run "python boolean_retrieval.py"
 
-Usage
----------------------
+#### Usage
   * Commands:
     The system has 2 commands: 'index' and 'search'.
 
