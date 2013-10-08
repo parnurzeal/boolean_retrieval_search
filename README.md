@@ -4,20 +4,19 @@ boolean_retrieval_search
 This is a search and index system of boolearn retrieval model for text files.
 
 #### How to run the system
-  * Requirement - Python 3.0, project folder from repository
-  * Process - go to the project folder and run "python boolean_retrieval.py"
+* Requirement - Python 3.0, project folder from repository
+* Process - go to the project folder and run "python boolean_retrieval.py"
 
-#### Usage
-  * Commands:
-    The system has 2 commands: 'index' and 'search'.
+#### Command Usages
+The system has 2 commands: 'index' and 'search'.
 
-    1) index - all about index in search system.
+1. index - all about index in search system.
       
-      - Description : This command is used for creating the inverted index from the text files provided.
+- Description : This command is used for creating the inverted index from the text files provided.
       
-      - Synopsis : index [ -s ], index [ -r path ]
+- Synopsis : index [ -s ], index [ -r path ]
       
-      - Option
+- Option
           
           1.1) index [ -s ] --> show all data in inverted index.
             Result: show the list of inverted index in alphabetic order, follow with DocID list for that keyword.
@@ -50,7 +49,7 @@ This is a search and index system of boolearn retrieval model for text files.
           This will show the last created inverted index by option -r
         otherwise from above will return "wrong usage" message
 
-    2) search - search for provided query from inverted index.
+2. search - search for provided query from inverted index.
 
         - Description : The command will start to search using single query provided.
 
