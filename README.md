@@ -15,6 +15,7 @@ The system has 2 commands: 'index' and 'search'.
   - Synopsis : index [ -s ], index [ -r path ]
   - Option 
       * index [ -s ] --> show all data in inverted index.
+          
           Result: show the list of inverted index in alphabetic order, follow with DocID list for that keyword.
             Result Format:
             ---------------------------------------- Inverted Index -------------------------------------------
