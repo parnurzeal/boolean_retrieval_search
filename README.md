@@ -11,11 +11,8 @@ This is a search and index system of boolearn retrieval model for text files.
 The system has 2 commands: 'index' and 'search'.
 
 1. index - all about index in search system.
-      
 - Description : This command is used for creating the inverted index from the text files provided.
-      
 - Synopsis : index [ -s ], index [ -r path ]
-      
 - Option
           
           1.1) index [ -s ] --> show all data in inverted index.
