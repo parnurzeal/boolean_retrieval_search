@@ -19,21 +19,21 @@ The system has 2 commands: 'index' and 'search'.
           Result: show the list of inverted index in alphabetic order, follow with DocID list for that keyword.
           Result Format:
 
-            ---------------------------------------- Inverted Index -------------------------------------------
-                             Term         |                         (DocID, DocName)                        
-            ---------------------------------------------------------------------------------------------------------
-                             Term1        |              (DocID, DocName), (DocID, DocName),...
-                             Term2        |              (DocID, DocName), (DocID, DocName),...
-                                   .            |                                         .
-                                   .            |                                         . 
-            Result Example:
-              >> index -s 
-            ---------------------------------------- Inverted Index -------------------------------------------
-                             Term         |                         (DocID, DocName)                        
-            ---------------------------------------------------------------------------------------------------------
-                                  Ant           |              (1, "Ant & Dog"), (3, "Industrious Animal")
-                                  Cat           |                                         -
-            ---------------------------------------------------------------------------------------------------------
+         >   ---------------------------------------- Inverted Index -------------------------------------------
+         >                    Term         |                         (DocID, DocName)                        
+         >   ---------------------------------------------------------------------------------------------------------
+         >                    Term1        |              (DocID, DocName), (DocID, DocName),...
+         >                    Term2        |              (DocID, DocName), (DocID, DocName),...
+         >                          .            |                                         .
+         >                          .            |                                         . 
+         >   Result Example:
+         >     >> index -s 
+         >   ---------------------------------------- Inverted Index -------------------------------------------
+         >                    Term         |                         (DocID, DocName)                        
+         >   ---------------------------------------------------------------------------------------------------------
+         >                         Ant           |              (1, "Ant & Dog"), (3, "Industrious Animal")
+         >                         Cat           |                                         -
+         >   ---------------------------------------------------------------------------------------------------------
          
             1.2) index [ -r path index_file_name]  --> create inverted index from all text files in provided path and return index file named as index_file_name parameter.
             Result: return true when success, false otherwise.
